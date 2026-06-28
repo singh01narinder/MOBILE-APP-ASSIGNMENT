@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Settings Menu Screen</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #eef2f3; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .phone-wrapper { width: 360px; height: 740px; background: white; border: 12px solid #333; border-radius: 36px; box-shadow: 0px 10px 20px rgba(0,0,0,0.2); padding: 0; box-sizing: border-box; display: flex; flex-direction: column; overflow: hidden; position: relative;}
+        
+        /* App Header Container */
+        .app-header { background: #f8f9fa; border-bottom: 1px solid #e0e0e0; padding: 15px 20px; display: flex; align-items: center; margin-top: 20px;}
+        .menu-toggle-btn { font-size: 20px; cursor: pointer; margin-right: 15px; color: #007AFF; }
+        .header-title { font-size: 18px; font-weight: bold; color: #333; }
+        
+        /* Fake Home Screen Content Layer underneath */
+        .home-bg-content { padding: 20px; color: #ccc; }
+        .dummy-card { background: #fafafa; border: 1px solid #eaeaea; padding: 15px; border-radius: 8px; margin-bottom: 10px; }
+
+        /* Slide-out Sidebar Drawer Navigation Menu */
+        .sidebar-drawer { position: absolute; top: 0; left: 0; width: 70%; height: 100%; background: #2c3e50; box-shadow: 5px 0px 15px rgba(0,0,0,0.3); display: block; flex-direction: column; padding: 24px; box-sizing: border-box; z-index: 10; transition: 0.3s; }
+        .drawer-brand { color: white; font-size: 20px; font-weight: bold; margin-bottom: 30px; margin-top: 20px; border-bottom: 1px solid #34495e; padding-bottom: 10px; }
+        
+        /* Menu Choice Row Elements */
+        .menu-row { display: flex; align-items: center; color: #ecf0f1; padding: 14px 10px; text-decoration: none; font-size: 15px; font-weight: 500; border-radius: 6px; margin-bottom: 8px; cursor: pointer; }
+        .menu-row:hover { background: #34495e; color: #3498db; }
+        .menu-icon { margin-right: 12px; font-size: 16px; }
+    </style>
+</head>
+<body>
+
+    <div class="phone-wrapper">
+        <div class="app-header">
+            <span class="menu-toggle-btn" onclick="alert('Opening Sidebar Drawer Menu...')">☰</span>
+            <div class="header-title">LearnerApp Dashboard</div>
+        </div>
+        
+        <div class="home-bg-content">
+            <div class="dummy-card">### Background Content Content</div>
+            <div class="dummy-card">### Secondary Layout Dashboard parameters</div>
+        </div>
+
+        <div id="drawer" class="sidebar-drawer">
+            <div class="drawer-brand">⚙️ Menu Options</div>
+            
+            <div class="menu-row" onclick="alert('Navigating to Account Profile Settings...')">
+                <span class="menu-icon">👤</span> Account Profile Settings
+            </div>
+            <div class="menu-row" onclick="alert('Navigating to Notification Alerts Screen...')">
+                <span class="menu-icon">🔔</span> Notification Alerts
+            </div>
+            <div class="menu-row" onclick="alert('Navigating to Privacy Policy Documentation...')">
+                <span class="menu-icon">🔒</span> Privacy Policy
+            </div>
+            <div class="menu-row" onclick="alert('Executing Log Out Routine...')">
+                <span class="menu-icon">🚪</span> Log Out
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
