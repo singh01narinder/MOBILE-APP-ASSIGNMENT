@@ -1,0 +1,49 @@
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Screen Feed</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #eef2f3; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .phone-wrapper { width: 360px; height: 740px; background: white; border: 12px solid #333; border-radius: 36px; box-shadow: 0px 10px 20px rgba(0,0,0,0.2); padding: 0; box-sizing: border-box; display: flex; flex-direction: column; overflow: hidden; position: relative;}
+        
+        /* App Header Container */
+        .app-header { background: #f8f9fa; border-bottom: 1px solid #e0e0e0; padding: 15px 20px; display: flex; align-items: center; justify-content: space-between; margin-top: 20px;}
+        
+        /* Logo Graphic Component */
+        .app-logo { width: 35px; height: 35px; background: #007AFF; border-radius: 8px; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold; font-size: 20px; }
+        .header-title { font-size: 18px; font-weight: bold; color: #333; flex-grow: 1; margin-left: 12px; }
+        
+        /* Feed Content Container */
+        .feed-container { padding: 20px; overflow-y: auto; flex-grow: 1; }
+        .feed-card { background: #fdfdfd; border: 1px solid #eaeaea; border-radius: 12px; padding: 16px; margin-bottom: 16px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+        .feed-card h3 { margin: 0 0 8px 0; color: #222; font-size: 16px; }
+        .feed-card p { margin: 0; color: #666; font-size: 13px; line-height: 1.4; }
+    </style>
+</head>
+<body>
+
+    <div class="phone-wrapper">
+        <div class="app-header">
+            <div class="app-logo">L</div>
+            <div class="header-title">LearnerApp Feed</div>
+        </div>
+        
+        <div class="feed-container">
+            <div class="feed-card">
+                <h3>Welcome to Lab 3!</h3>
+                <p>This layout container represents your core dashboard viewport. Items listed here render dynamically inside your frontend UI frame.</p>
+            </div>
+            <div class="feed-card">
+                <h3>Mobile UI Fundamentals</h3>
+                <p>An application header wrapper establishes clear structural branding context positions for app users navigating views.</p>
+            </div>
+            <div class="feed-card">
+                <h3>Persistent App State</h3>
+                <p>Data tracking engines propagate item parameters throughout database caches to synchronize rendering stacks local device arrays.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
