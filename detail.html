@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Item Detail Screen</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #eef2f3; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .phone-wrapper { width: 360px; height: 740px; background: white; border: 12px solid #333; border-radius: 36px; box-shadow: 0px 10px 20px rgba(0,0,0,0.2); padding: 0; box-sizing: border-box; display: flex; flex-direction: column; overflow: hidden; position: relative;}
+        
+        /* App Header with Back Button */
+        .app-header { background: #f8f9fa; border-bottom: 1px solid #e0e0e0; padding: 15px 20px; display: flex; align-items: center; margin-top: 20px;}
+        .back-btn { font-size: 18px; color: #007AFF; text-decoration: none; cursor: pointer; font-weight: bold; margin-right: 15px; }
+        .header-title { font-size: 18px; font-weight: bold; color: #333; }
+        
+        /* Detail Content Container */
+        .detail-container { padding: 0; overflow-y: auto; flex-grow: 1; display: flex; flex-direction: column; }
+        
+        /* Large Image Placeholder Block */
+        .image-placeholder { width: 100%; height: 220px; background: #cccccc; display: flex; justify-content: center; align-items: center; color: #666; font-size: 16px; font-weight: bold; }
+        
+        /* Text Info Section */
+        .info-section { padding: 20px; }
+        .item-title { font-size: 24px; font-weight: bold; color: #222; margin: 0 0 12px 0; }
+        .item-description { color: #555; font-size: 14px; line-height: 1.6; margin: 0; }
+    </style>
+</head>
+<body>
+
+    <div class="phone-wrapper">
+        <div class="app-header">
+            <span class="back-btn" onclick="alert('Navigating back to Home Screen...')">❮ Back</span>
+            <div class="header-title">Item Details</div>
+        </div>
+        
+        <div class="detail-container">
+            <div class="image-placeholder">🖼️ Featured Item Image Placeholder</div>
+            
+            <div class="info-section">
+                <h1 class="item-title">Welcome to Lab 3 Details</h1>
+                <p class="item-description">
+                    This screen displays comprehensive item description parameters. It maps directly out of your platform's stack router context, demonstrating that individual feed indexes can seamlessly deliver unique item details onto a dedicated consumer view. All text paragraphs, asset headers, and navigation layers are functioning normally.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
